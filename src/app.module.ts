@@ -6,7 +6,7 @@ import configuration from './config/configuration'
 import { validationSchema } from './config/validation'
 
 import { AuthModule } from './auth/auth.module'
-import { UserModule } from './users/user.module'
+import { UsersModule } from './users/users.module'
 
 @Module({
 	imports: [
@@ -22,7 +22,7 @@ import { UserModule } from './users/user.module'
 			}),
 		}),
 		AuthModule,
-		UserModule,
+		UsersModule,
 	],
 })
 export class AppModule {}
